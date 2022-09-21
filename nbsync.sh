@@ -4,7 +4,7 @@
 LOCALPATH="${PWD}/nbsyncdata"       		
 
 # Temporary location within the container
-INNERPATH=/syncdata              			
+INNERPATH=/nbsyncdata              			
 
 # Image to use to do the copying
 IMAGE=ubuntu					 			
@@ -19,7 +19,7 @@ SRC_INSTANCE=/opt/netbox
 SRC_INSTANCE_NAME=`basename $SRC_INSTANCE`  
 
 # The path to the destination instance -- this is also expected to be a netbox-docker root folder
-DST_INSTANCE=/opt/netboxlab      			
+DST_INSTANCE=/opt/netboxdev      			
 
 # Name of the instance..
 DST_INSTANCE_NAME=`basename $DST_INSTANCE`	
