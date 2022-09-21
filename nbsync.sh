@@ -79,7 +79,7 @@ function sync_volumes() {
 	#$1 SOURCE container name
 	#$2 DEST container name
 	#$3 SRC_PATH
-  #$4 DST_PATH
+	#$4 DST_PATH
 
 	backup $1 $3 $4    # SOURCE SRC_PATH DST_PATH
 	restore $2 $3 $4   # DEST   SRC_PATH DST_PATH
@@ -90,7 +90,7 @@ function backup() {
 	# Arguments
 	#$1 SOURCE Container name
 	#$2 SRC_PATH  Source path within the container
-  #$3 DST_PATH  Destination path on the bind mounted path for things like $INNERPATH/postgres or $INNERPATH/media
+  	#$3 DST_PATH  Destination path on the bind mounted path for things like $INNERPATH/postgres or $INNERPATH/media
 
 	# Uses global variables
 	# LOCALPATH (syncdata at base OS level)
@@ -108,7 +108,7 @@ function restore() {
 	# Arguments
 	#$1 DEST Container Name
 	#$2 SRC_PATH  Source path within the container like $INNERPATH/postgres
-  #$3 DST_PATH  Destination path within the contaiiner
+  	#$3 DST_PATH  Destination path within the contaiiner
 
 
 	# Uses global variables
