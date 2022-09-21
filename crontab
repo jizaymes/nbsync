@@ -1,0 +1,11 @@
+# This file can be symlinked from your system level /etc/cron.d
+#
+# ln -s /path/to/nbsync/crontab /etc/cron.d/netbox-prod-to-dev-sync
+#
+
+# 2 AM
+
+0 2   * * *   root    cd /path/to/nbsync && ./nbsync.sh
+
+# To force sync, just set to when you want to run this manually
+#30 15   * * *   root    cd /path/to/nbsync && ./nbsync.sh
