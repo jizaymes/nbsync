@@ -13,13 +13,13 @@ IMAGE=ubuntu
 PATH=$PATH:/usr/bin:/usr/local/bin        	
 
 # The path to the source instance -- this is expected to be a netbox-docker root folder
-SRC_INSTANCE=/web/netbox		 			
+SRC_INSTANCE=/opt/netbox		 			
 
 # Name of the instance, inferred by the path (/opt/netbox -> netbox)
 SRC_INSTANCE_NAME=`basename $SRC_INSTANCE`  
 
 # The path to the destination instance -- this is also expected to be a netbox-docker root folder
-DST_INSTANCE=/web/netboxlab      			
+DST_INSTANCE=/opt/netboxlab      			
 
 # Name of the instance..
 DST_INSTANCE_NAME=`basename $DST_INSTANCE`	
